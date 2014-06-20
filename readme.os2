@@ -1,0 +1,21 @@
+This is the OS/2 port of lib765 0.4.2, built with Paul Smedley's
+Build Environment and GCC 4.5.2.
+
+This library emulates a particular Floppy drive controller; for
+more informations, refer to the file 765.txt located into the /doc
+subdirectory.
+
+I included the sources. If you want to install it, it's just a matter
+of "make install" to copy the relevant files into /usr/local/lib.
+
+If you want to recompile it, you shall do
+
+make distclean
+sh ./configure
+make
+make install
+
+Have fun
+Mentore Siesto
+Pisa, Italy
+mentore.siesto@alice.it

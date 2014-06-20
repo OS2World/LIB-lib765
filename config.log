@@ -1,0 +1,211 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:734: checking for a BSD compatible install
+configure:787: checking whether build environment is sane
+configure:844: checking whether make sets ${MAKE}
+configure:890: checking for working aclocal-1.4
+configure:903: checking for working autoconf
+configure:916: checking for working automake-1.4
+configure:929: checking for working autoheader
+configure:942: checking for working makeinfo
+configure:962: checking for gcc
+configure:1075: checking whether the C compiler (gcc -D__EMX__ -Dunix  -D__ST_MT_ERRNO__ -O3 -march=pentium3 -Zexe -Zomf -Zmap -Zargs-wild -Zbin-files -D__ST_MT_ERRNO__ -s) works
+configure:1091: gcc -o conftest -D__EMX__ -Dunix  -D__ST_MT_ERRNO__ -O3 -march=pentium3  -Zexe -Zomf -Zmap -Zargs-wild -Zbin-files -D__ST_MT_ERRNO__ -s conftest.c  1>&5
+configure:1117: checking whether the C compiler (gcc -D__EMX__ -Dunix  -D__ST_MT_ERRNO__ -O3 -march=pentium3 -Zexe -Zomf -Zmap -Zargs-wild -Zbin-files -D__ST_MT_ERRNO__ -s) is a cross-compiler
+configure:1122: checking whether we are using GNU C
+configure:1131: gcc -E conftest.c
+configure:1150: checking whether gcc accepts -g
+configure:1222: checking for a BSD compatible install
+configure:1277: checking for ranlib
+configure:1305: checking whether make sets ${MAKE}
+configure:1343: checking for Cygwin environment
+configure:1359: gcc -c -D__EMX__ -Dunix  -D__ST_MT_ERRNO__ -O3 -march=pentium3 -DENABLE_LIBDSK  conftest.c 1>&5
+configure: In function `main':
+configure:1355: error: `__CYGWIN32__' undeclared (first use in this function)
+configure:1355: error: (Each undeclared identifier is reported only once
+configure:1355: error: for each function it appears in.)
+configure: failed program was:
+#line 1348 "configure"
+#include "confdefs.h"
+
+int main() {
+
+#ifndef __CYGWIN__
+#define __CYGWIN__ __CYGWIN32__
+#endif
+return __CYGWIN__;
+; return 0; }
+configure:1376: checking for mingw32 environment
+configure:1388: gcc -c -D__EMX__ -Dunix  -D__ST_MT_ERRNO__ -O3 -march=pentium3 -DENABLE_LIBDSK  conftest.c 1>&5
+configure: In function `main':
+configure:1384: error: `__MINGW32__' undeclared (first use in this function)
+configure:1384: error: (Each undeclared identifier is reported only once
+configure:1384: error: for each function it appears in.)
+configure: failed program was:
+#line 1381 "configure"
+#include "confdefs.h"
+
+int main() {
+return __MINGW32__;
+; return 0; }
+configure:1405: checking how to run the C preprocessor
+configure:1426: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1560: checking host system type
+configure:1581: checking build system type
+configure:1610: checking for ld used by GCC
+configure:1678: checking if the linker (ld.exe) is GNU ld
+configure:1695: checking for ld.exe option to reload object files
+configure:1707: checking for BSD-compatible nm
+configure:1745: checking for a sed that does not truncate output
+configure:1829: checking whether ln -s works
+configure:1850: checking how to recognise dependent libraries
+configure:2036: checking for object suffix
+configure:2042: gcc -c -D__EMX__ -Dunix  -D__ST_MT_ERRNO__ -O3 -march=pentium3 -DENABLE_LIBDSK  conftest.c 1>&5
+configure:2062: checking for executable suffix
+configure:2103: checking command to parse nm output
+configure:2186: gcc -c -D__EMX__ -Dunix  -D__ST_MT_ERRNO__ -O3 -march=pentium3 -DENABLE_LIBDSK  conftest.c 1>&5
+configure:2189: nm conftest.o | sed -n -e 's/^.*[ ]\([ABCDGISTW][ABCDGISTW]*\)[ ][ ]*\(\)\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2\3 \3/p' > conftest.nm
+cannot find nm_test_var in conftest.nm
+configure:2186: gcc -c -D__EMX__ -Dunix  -D__ST_MT_ERRNO__ -O3 -march=pentium3 -DENABLE_LIBDSK  conftest.c 1>&5
+configure:2189: nm conftest.o | sed -n -e 's/^.*[ ]\([ABCDGISTW][ABCDGISTW]*\)[ ][ ]*\(_\)\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2\3 \3/p' > conftest.nm
+configure:2240: gcc -o conftest.exe -D__EMX__ -Dunix  -D__ST_MT_ERRNO__ -O3 -march=pentium3 -DENABLE_LIBDSK  -Zexe -Zomf -Zmap -Zargs-wild -Zbin-files -D__ST_MT_ERRNO__ -s conftest.c conftstm.o 1>&5
+configure:2289: checking for dlfcn.h
+configure:2299: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:2468: checking for OS2-ranlib
+configure:2535: checking for OS2-strip
+configure:2567: checking for strip
+configure:2792: checking for objdir
+configure:2819: checking for gcc option to produce PIC
+configure:2967: checking if gcc PIC flag -fPIC works
+configure:2981: gcc -c -D__EMX__ -Dunix  -D__ST_MT_ERRNO__ -O3 -march=pentium3 -DENABLE_LIBDSK -fPIC -DPIC  conftest.c 1>&5
+cc1.exe: warning: -fPIC ignored for target (all code is position independent)
+configure:3033: checking if gcc static flag -static works
+configure:3048: gcc -o conftest.exe -D__EMX__ -Dunix  -D__ST_MT_ERRNO__ -O3 -march=pentium3 -DENABLE_LIBDSK  -Zexe -Zomf -Zmap -Zargs-wild -Zbin-files -D__ST_MT_ERRNO__ -s -static conftest.c  1>&5
+weakld: error: Unresolved symbol (UNDEF) '___libc_back_signalOS2V1Handler16bit'.
+weakld: info: The symbol is referenced by:
+    U:\usr\lib\libc_s.lib(signals.obj)
+Ignoring unresolved externals reported from weak prelinker.
+
+U:\usr\lib\libc_s.lib(signals.obj) : error LNK2029: "___libc_back_signalOS2V1Handler16bit" : unresolved external
+
+
+There was 1 error detected
+configure: failed program was:
+#line 3041 "configure"
+#include "confdefs.h"
+
+int main() {
+
+; return 0; }
+configure:3075: checking if gcc supports -c -o file.o
+configure:3094: gcc -c -D__EMX__ -Dunix  -D__ST_MT_ERRNO__ -O3 -march=pentium3 -DENABLE_LIBDSK -o out/conftest2.o  conftest.c 1>&5
+configure:3123: checking if gcc supports -c -o file.lo
+configure:3141: gcc -c -D__EMX__ -Dunix  -D__ST_MT_ERRNO__ -O3 -march=pentium3 -DENABLE_LIBDSK -c -o conftest.lo  conftest.c 1>&5
+configure:3191: checking if gcc supports -fno-rtti -fno-exceptions
+configure:3204: gcc -c -D__EMX__ -Dunix  -D__ST_MT_ERRNO__ -O3 -march=pentium3 -DENABLE_LIBDSK -fno-rtti -fno-exceptions -c conftest.c  conftest.c 1>&5
+cc1.exe: warning: "-fno-rtti" is valid for C++ but not for C/ObjC
+cc1.exe: warning: "-fno-rtti" is valid for C++ but not for C/ObjC
+configure:3231: checking whether the linker (ld.exe) supports shared libraries
+configure:3930: checking how to hardcode library paths into programs
+configure:3958: checking whether stripping libraries is possible
+configure:3972: checking dynamic linker characteristics
+configure:4390: checking if libtool supports shared libraries
+configure:4394: checking whether to build shared libraries
+configure:4417: checking whether to build static libraries
+configure:5563: checking for ANSI C header files
+configure:5576: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:5643: gcc -o conftest.exe -Wall -D__EMX__ -Dunix  -D__ST_MT_ERRNO__ -O3 -march=pentium3 -DENABLE_LIBDSK  -Zexe -Zomf -Zmap -Zargs-wild -Zbin-files -D__ST_MT_ERRNO__ -s conftest.c  1>&5
+configure: In function `main':
+configure:5638: warning: implicit declaration of function `exit'
+configure:5670: checking for errno.h
+configure:5680: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:5670: checking for sys/ioctl.h
+configure:5680: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:5670: checking for sys/stat.h
+configure:5680: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:5670: checking for unistd.h
+configure:5680: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:5670: checking for fcntl.h
+configure:5680: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:5711: checking for libdsk.h
+configure:5721: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:5717:20: libdsk.h: No such file or directory
+configure: failed program was:
+#line 5716 "configure"
+#include "confdefs.h"
+#include <libdsk.h>
+configure:5751: checking for strcmpi
+configure:5779: gcc -o conftest.exe -Wall -D__EMX__ -Dunix  -D__ST_MT_ERRNO__ -O3 -march=pentium3 -DENABLE_LIBDSK  -Zexe -Zomf -Zmap -Zargs-wild -Zbin-files -D__ST_MT_ERRNO__ -s conftest.c  1>&5
+weakld: error: Unresolved symbol (UNDEF) '_strcmpi'.
+weakld: info: The symbol is referenced by:
+    U:\tmp\cctSg0Ut.o
+Ignoring unresolved externals reported from weak prelinker.
+
+U:\tmp\cctSg0Ut.o(cctSg0Ut.o) : error LNK2029: "_strcmpi" : unresolved external
+
+
+There was 1 error detected
+configure: failed program was:
+#line 5756 "configure"
+#include "confdefs.h"
+/* System header to define __stub macros and hopefully few prototypes,
+    which can conflict with char strcmpi(); below.  */
+#include <assert.h>
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char strcmpi();
+
+int main() {
+
+/* The GNU C library defines this for functions which it implements
+    to always fail with ENOSYS.  Some functions are actually named
+    something starting with __ and the normal name is an alias.  */
+#if defined (__stub_strcmpi) || defined (__stub___strcmpi)
+choke me
+#else
+strcmpi();
+#endif
+
+; return 0; }
+configure:5751: checking for stricmp
+configure:5779: gcc -o conftest.exe -Wall -D__EMX__ -Dunix  -D__ST_MT_ERRNO__ -O3 -march=pentium3 -DENABLE_LIBDSK  -Zexe -Zomf -Zmap -Zargs-wild -Zbin-files -D__ST_MT_ERRNO__ -s conftest.c  1>&5
+configure:5806: checking for dsk_open in -ldsk
+configure:5825: gcc -o conftest.exe -Wall -D__EMX__ -Dunix  -D__ST_MT_ERRNO__ -O3 -march=pentium3 -DENABLE_LIBDSK  -Zexe -Zomf -Zmap -Zargs-wild -Zbin-files -D__ST_MT_ERRNO__ -s conftest.c -ldsk   1>&5
+weakld: cannot open library file 'u:\cups\lib\dsk_s.a'.
+emxomfld: weak prelinker failed. (rc=8)
+configure: failed program was:
+#line 5814 "configure"
+#include "confdefs.h"
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char dsk_open();
+
+int main() {
+dsk_open()
+; return 0; }
+configure:5855: checking for working const
+configure:5909: gcc -c -Wall -D__EMX__ -Dunix  -D__ST_MT_ERRNO__ -O3 -march=pentium3 -DENABLE_LIBDSK  conftest.c 1>&5
+configure: In function `main':
+configure:5883: warning: unused variable `s'
+configure:5903: warning: unused variable `foo'
+configure:5865: warning: unused variable `x'
+configure:5871: warning: unused variable `zero'
+configure:5882: warning: `t' might be used uninitialized in this function
+configure:5900: warning: `b' might be used uninitialized in this function
+configure:5930: checking for size_t
+configure:5965: checking for executable suffix
+configure:5996: checking for object suffix
+configure:6022: checking whether gcc needs -traditional
+configure:6068: checking whether sys/types.h defines makedev
+configure:6080: gcc -o conftest.exe -Wall -D__EMX__ -Dunix  -D__ST_MT_ERRNO__ -O3 -march=pentium3 -DENABLE_LIBDSK  -Zexe -Zomf -Zmap -Zargs-wild -Zbin-files -D__ST_MT_ERRNO__ -s conftest.c  1>&5
+configure:6174: checking for 8-bit clean memcmp
+configure:6192: gcc -o conftest.exe -Wall -D__EMX__ -Dunix  -D__ST_MT_ERRNO__ -O3 -march=pentium3 -DENABLE_LIBDSK  -Zexe -Zomf -Zmap -Zargs-wild -Zbin-files -D__ST_MT_ERRNO__ -s conftest.c  1>&5
+configure:6185: warning: return type defaults to `int'
+configure: In function `main':
+configure:6187: warning: implicit declaration of function `exit'
+configure:6187: warning: implicit declaration of function `memcmp'
+configure:6212: checking for strerror
+configure:6240: gcc -o conftest.exe -Wall -D__EMX__ -Dunix  -D__ST_MT_ERRNO__ -O3 -march=pentium3 -DENABLE_LIBDSK  -Zexe -Zomf -Zmap -Zargs-wild -Zbin-files -D__ST_MT_ERRNO__ -s conftest.c  1>&5
